@@ -1,3 +1,5 @@
+list(APPEND CMAKE_MESSAGE_CONTEXT "src")
+message(STATUS "src begin")
 #[[ 
     blow is required to be presented in the top-level CMakeLists.txt file
     which is "When configure a project using CMake, you need to specify source directory and build directory.
@@ -13,3 +15,6 @@ project(Hello)#项目名称
 add_subdirectory(hello)
 
 # 编译遇到未定义错误，可能是因为cmake未更新信息，删除build文件夹下文件，重进即可
+
+message(STATUS "src end")
+list(POP_BACK CMAKE_MESSAGE_CONTEXT)
