@@ -42,12 +42,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 # 配置依赖
-if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE "debug")
-endif()
+# if(NOT CMAKE_BUILD_TYPE)
+#   set(CMAKE_BUILD_TYPE "debug")
+# endif()
 
 if(NOT MUDUO_PATH)
-  set(MUDUO_PATH "~/qinjun/build/release-install-cpp11")
+  set(MUDUO_PATH "~/qinjun/build/debug-install-cpp11")
 endif()
 
 # if(NOT MUDUO_PATH)
