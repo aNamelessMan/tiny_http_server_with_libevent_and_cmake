@@ -4,11 +4,11 @@
 # 生成：为当前工作项目生成构建系统，例如为make生成makefile
 
 # 使用 -S指定目录的源代码 在 -B指定的目录（没有就创建）的 生成一个构建系统
-cmake -S ./src -B ./build --log-level=STATUS --log-context -D CMAKE_BUILD_TYPE=Debug
+cmake -S ./src -B ./build
 
 # 3. Build 构建阶段 调用构建工具（如make）
 # compile + link + test + package
 cmake --build build -j 8
 
 # cmake --install <dir>
-./build/hello/Hello
+# ./build/hello/Hello
